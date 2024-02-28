@@ -37,7 +37,7 @@ html, body {
     opacity: .6;
     left: 30px;
     background-size: cover;
-    background-image: url("/Users/anthonygoldsworthy/Documents/GitHub/anthonygoldsworthy.github.io/Assets/Goldsworthy Logo.png");
+    background-image: url("Assets/Goldsworthy Logo.png");
 }
 #navItem {
     color: rgba(0,0,0,0.3);
