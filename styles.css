@@ -25,7 +25,7 @@ html, body {
     left: 30px;
     transition: .2s ease;
     background-size: cover;
-    background-image: url("/Users/anthonygoldsworthy/Documents/GitHub/anthonygoldsworthy.github.io/Assets/Goldsworthy Logo.png");
+    background-image: url("Assets/Goldsworthy Logo.png");
 }
 .headerLogo:hover {
     height: 60px;
