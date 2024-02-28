@@ -93,9 +93,10 @@ html, body {
 
 .splash {
     height: 100vh;
-    filter: grayscale(1);
+    filter:contrast(1.1);
     max-width: 100%;
     position: absolute;
+    mix-blend-mode: normal;
     top: 0;
     left: 0;
     right: 0;
