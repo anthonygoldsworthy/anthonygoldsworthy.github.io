@@ -75,7 +75,6 @@ html, body {
     height: 50px;
     width: 50px;
     position: fixed;
-    user-select: none;
     bottom: 25px;
     right: 25px;
     background: url("Assets/CircleG.png");
@@ -89,7 +88,6 @@ html, body {
     height: 50px;
     width: 50px;
     position: fixed;
-    user-select: none;
     bottom: 25px;
     right: -100px;
     background: url("Assets/CircleG.png");
