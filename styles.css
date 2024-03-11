@@ -128,7 +128,7 @@ html, body {
     opacity: 100%;
     transition:  .4s ease;
     text-shadow: 0px 0px 10px rgba(50,50,50,1);
-    color: white;
+    color: transparent;
     background: rgba(50,50,50,1);
     font-size: 40px;
     z-index: 15;
