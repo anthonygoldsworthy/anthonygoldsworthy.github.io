@@ -6,6 +6,7 @@ html, body {
     background: rgba(50,50,50,1);
 }
 .nav {
+    will-change: transform;
     overflow: hidden;
     transition: .4s ease;
     height: 100vh;
@@ -19,6 +20,7 @@ html, body {
     border-right: 1px solid white;
 }
 .navAct {
+    will-change: transform;
     overflow: hidden;
     transition: .4s ease;
     height: 100vh;
@@ -31,6 +33,7 @@ html, body {
     border-right: 0px solid white;
 }
 .navA {
+    will-change: transform;
     user-select: none;
     z-index: 20;
     transition: .4s ease;
@@ -44,6 +47,7 @@ html, body {
     background-size: 100%;
 }
 .aAct {
+    will-change: transform;
     user-select: all;
     z-index: 20;
     transition: .4s ease;
@@ -59,11 +63,13 @@ html, body {
     user-select: none;
 }
 .aAct:hover {
+    will-change: transform;
     opacity: 100%;
     user-select: none;
     filter: drop-shadow(0px 0px 10px rgba(255, 255, 255, 0.5));
 }
 .navG {
+    will-change: transform, position, opacity;
     z-index: 20;
     transition: .4s ease;
     height: 50px;
@@ -77,6 +83,7 @@ html, body {
     opacity: 100%;
 }
 .gAct {
+    will-change: transform, position, opacity;
     z-index: 20;
     transition: .4s ease;
     height: 50px;
@@ -90,6 +97,7 @@ html, body {
     opacity: 0%;
 }
 .pageActText {
+    will-change: transform;
     text-shadow: 0px 0px 0px rgba(255,255,255,0.5);
     font-family: "Oswald", sans-serif;
     user-select: none;
@@ -109,11 +117,13 @@ html, body {
     margin-top: -35px;
 }
 .pageActText:hover {
+    will-change: transform;
     text-shadow: 0px 0px 10px rgba(255,255,255,0.5);
     transform: scale(1);
     transition:  .4s ease;
 }
 .pageAct {
+    will-change: transform;
     font-family: "Oswald", sans-serif;
     user-select: none;
     height: 70px;
@@ -133,6 +143,7 @@ html, body {
     margin-top: -35px;
 }
 .mainBody {
+    will-change: transform;
     transform: scale(1);
     z-index: 20;
     opacity: 100%;
@@ -150,11 +161,13 @@ html, body {
     transition:  .4s ease;
 }
 .mainBody:hover {
+    will-change: transform;
     transform: scale(1.01);
     box-shadow: 0px 0px 30px rgba(0,0,0,.75);
     user-select: none;
 }
 .bodyAct {
+    will-change: transform;
     overflow: hidden;
     z-index: 20;
     opacity: 0%;
@@ -171,6 +184,7 @@ html, body {
     user-select: none;
 }
 .bodHeader {
+    will-change: transform;
     font-family: "Oswald", sans-serif;
     color: white;
     text-align: center;
@@ -182,6 +196,7 @@ html, body {
     user-select: none;
 }
 .bodSplash {
+    will-change: transform;
     height: 90%;
     width: 100%;
     background: url("Assets/IMG_0173.PNG");
@@ -194,6 +209,7 @@ html, body {
     user-select: none;
 }
 .bodSplash {
+    will-change: transform;
     transform: scale(1);
     height: 90%;
     width: 100%;
@@ -205,7 +221,8 @@ html, body {
     user-select: none;
 }
 .navMenuItems {
-    transform: scale(1) rotateX(0deg);
+    will-change: transform;
+    transform: scale(.5) rotateX(0deg);
     opacity: 0%;
     transition:  .4s ease;
     height: 100vh;
@@ -220,6 +237,7 @@ a {
     text-decoration: none;
 }
 .navMenAct {
+    will-change: transform;
     transform: scale(1) rotateX(0deg);
     opacity: 100%;
     transition:  .4s ease;
@@ -232,6 +250,7 @@ a {
     user-select: none;
 }
 .item {
+    will-change: transform;
     height: 33vh;
     line-height: 33vh;
     width: 100vw;
@@ -246,6 +265,7 @@ a {
     user-select: none;
 }
 .item:hover {
+    will-change: transform;
     height: 33vh;
     line-height: 33vh;
     transition:  .4s ease .1s;
