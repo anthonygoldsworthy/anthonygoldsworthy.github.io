@@ -1,104 +1,259 @@
 html, body {
-    background: white;
     margin: 0 auto;
     height: 100vh;
     width: 100vw;
     overflow: hidden;
+    background: rgba(50,50,50,1);
 }
-.header {
-    z-index: 100;
+.nav {
+    overflow: hidden;
+    transition: .4s ease;
+    height: 100vh;
+    width: 100px;
+    user-select: none;
+    z-index: 10;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    background: rgba(50,50,50,1);
+    border-right: 1px solid white;
+}
+.navAct {
+    overflow: hidden;
+    transition: .4s ease;
+    height: 100vh;
     width: 100vw;
-    height: 60px;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    user-select: none;
+    background: rgba(50,50,50,1);
+    border-right: 0px solid white;
+}
+.navA {
+    user-select: none;
+    z-index: 20;
+    transition: .4s ease;
+    transform: rotate(0deg) scale(1);
+    height: 50px;
+    width: 50px;
+    position: fixed;
+    top: 25px;
+    left: 125px;
+    background: url("Assets/triangleA.png");
+    background-size: 100%;
+}
+.aAct {
+    user-select: all;
+    z-index: 20;
+    transition: .4s ease;
+    transform: rotate(-90deg) scale(1);
+    height: 100px;
+    width: 100px;
+    opacity: 70%;
+    position: fixed;
+    top: 25px;
+    left: 25px;
+    background: url("Assets/triangleA.png");
+    background-size: 100%;
+    user-select: none;
+}
+.aAct:hover {
+    opacity: 100%;
+    user-select: none;
+    filter: drop-shadow(0px 0px 10px rgba(255, 255, 255, 0.5));
+}
+.navG {
+    z-index: 20;
+    transition: .4s ease;
+    height: 50px;
+    width: 50px;
+    position: fixed;
+    user-select: none;
+    bottom: 25px;
+    right: 25px;
+    background: url("Assets/circle G.png");
+    background-size: 100%;
+    opacity: 100%;
+}
+.gAct {
+    z-index: 20;
+    transition: .4s ease;
+    height: 50px;
+    width: 50px;
+    position: fixed;
+    user-select: none;
+    bottom: 25px;
+    right: -100px;
+    background: url("Assets/circle G.png");
+    background-size: 100%;
+    opacity: 0%;
+}
+.pageActText {
+    text-shadow: 0px 0px 0px rgba(255,255,255,0.5);
+    font-family: "Oswald", sans-serif;
+    user-select: none;
+    opacity: 100%;
+    transition:  .4s ease;
+    color: white;
+    background: rgba(50,50,50,1);
+    font-size: 40px;
+    z-index: 15;
+    width: 200px;
+    height: 75px;
+    text-align: center;
+    position: fixed;
+    line-height: 75px;
+    top: 50vh;
+    left: 0px;
+    margin-top: -35px;
+}
+.pageActText:hover {
+    text-shadow: 0px 0px 10px rgba(255,255,255,0.5);
+    transform: scale(1);
+    transition:  .4s ease;
+}
+.pageAct {
+    font-family: "Oswald", sans-serif;
+    user-select: none;
+    height: 70px;
+    opacity: 100%;
+    transition:  .4s ease;
+    text-shadow: 0px 0px 10px rgba(50,50,50,1);
+    color: white;
+    background: rgba(50,50,50,1);
+    font-size: 40px;
+    z-index: 15;
+    width: 200px;
+    text-align: center;
+    position: fixed;
+    line-height: 75px;
+    top: 50vh;
+    left: 100vw;
+    margin-top: -35px;
+}
+.mainBody {
+    transform: scale(1);
+    z-index: 20;
+    opacity: 100%;
+    height: calc(100vh - 200px);
+    width: calc(100vw - 300px);
+    margin-top: 100px;
+    background: rgb(123,71,246);
+    background: linear-gradient(319deg, rgba(123,71,246,1) 5%, rgba(45,222,255,1) 95%);
+    border-radius: 20px;
+    box-shadow: 0px 0px 20px rgba(0,0,0,.5);
+    position: relative;
+    left: 200px;
+    overflow: hidden;
+    user-select: none;
+    transition:  .4s ease;
+}
+.mainBody:hover {
+    transform: scale(1.01);
+    box-shadow: 0px 0px 30px rgba(0,0,0,.75);
+    user-select: none;
+}
+.bodyAct {
+    overflow: hidden;
+    z-index: 20;
+    opacity: 0%;
+    height: calc(100vh - 200px);
+    width: calc(100vw - 300px);
+    margin-top: 100px;
+    background: rgb(123,71,246);
+    background: linear-gradient(319deg, rgba(123,71,246,1) 5%, rgba(45,222,255,1) 95%);
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px rgba(0,0,0,1);
+    position: relative;
+    transition:  .4s ease;
+    left: calc(100vw + 200px);
+    user-select: none;
+}
+.bodHeader {
+    font-family: "Oswald", sans-serif;
+    color: white;
+    text-align: center;
+    font-size: 7.52vw;
+    font-weight: 800;
+    text-shadow: 0px 0px 10px rgba(255,255,255,0.2);
+    position: relative;
+    top: 0px;
+    user-select: none;
+}
+.bodSplash {
+    height: 90%;
+    width: 100%;
+    background: url("Assets/IMG_0173.PNG");
+    background-position: top;
+    background-size: cover;
+    position: absolute;
+    filter: drop-shadow(0px 0px 10px rgba(255,255,255,.5));
+    bottom: 0px;
+    left: -70px;
+    user-select: none;
+}
+.bodSplash {
+    transform: scale(1);
+    height: 90%;
+    width: 100%;
+    background: url("Assets/IMG_0173.PNG");
+    background-position: top;
+    background-size: cover;
+    position: absolute;
+    filter: drop-shadow(0px 0px 10px rgba(255,255,255,.5));
+    user-select: none;
+}
+.navMenuItems {
+    transform: scale(.5) rotateX(0deg);
+    opacity: 0%;
+    transition:  .4s ease;
+    height: 100vh;
+    width: 100vw;
     background: transparent;
     position: fixed;
-    font-family: "Josefin Sans", sans-serif;
-    top: 30px;
-    left: 0px;
+    top: 0px;
+    left: -60vw;
+    user-select: none;
 }
-.headerLogo {
-    height: 60px;
-    width: 120px;
-    display: inline-block;
-    float: left;
-    position: relative;
-    opacity: .3;
-    left: 30px;
-    transition: .2s ease;
-    background-size: cover;
-    background-image: url("Assets/Goldsworthy Logo.png");
+a {
+    text-decoration: none;
 }
-.headerLogo:hover {
-    height: 60px;
-    width: 120px;
-    transition: .2s ease;
-    display: inline-block;
-    float: left;
-    position: relative;
-    opacity: .6;
-    left: 30px;
-    background-size: cover;
-    background-image: url("Assets/Goldsworthy Logo.png");
-}
-#navItem {
-    color: rgba(0,0,0,0.3);
-    transition: .2s ease;
-}
-#navItem:hover {
-    color: rgba(0,0,0,0.6);
-    transition: .2s ease;
-}
-.headerNav {
-    height: 60px;
-    font-size: 40px;
-    line-height: 70px;
-    display: inline-block;
-    float: right;
-    position: relative;
-    color: rgba(0,0,0,0.3);
-    opacity: 1;
-    right: 30px;
-}
-.navSlash {
-    display: inline;
-}
-.section1 {
-    overflow: hidden;
+.navMenAct {
+    transform: scale(1) rotateX(0deg);
+    opacity: 100%;
+    transition:  .4s ease;
     height: 100vh;
     width: 100vw;
-    background: #E84104;
+    background: transparent;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    user-select: none;
+}
+.item {
+    height: 33vh;
+    line-height: 33vh;
+    width: 100vw;
+    display: block;
+    transition:  .4s ease;
+    text-align: center;
     color: white;
+    opacity: 70%;
+    font-family: "Oswald", sans-serif;
+    font-size: 10vw;
+    text-shadow: 0px 0px 10px rgba(255,255,255,0);
+    user-select: none;
 }
-@keyframes Spin {
-    0% {
-        transform: rotate(0deg) scale(1.3);
-    }
-    100% {
-        transform: rotate(360deg) scale(1.3);
-    }
-}
-.spinner {
-    height: 100vh;
-    max-width: 100%;
-    position: absolute;
-    animation-name: Spin;
-    animation-duration: 25s;
-    animation-iteration-count: infinite;
-    animation-timing-function: linear;
-    top: 0;
-    left: 0;
-    right: 0;
-    opacity: .6;
-    margin: auto;
-}
-
-.splash {
-    height: 100vh;
-    filter:contrast(1.1);
-    max-width: 100%;
-    position: absolute;
-    mix-blend-mode: normal;
-    top: 0;
-    left: 0;
-    right: 0;
-    margin: auto;
+.item:hover {
+    height: 33vh;
+    line-height: 33vh;
+    transition:  .4s ease .1s;
+    text-align: center;
+    color: white;
+    opacity: 100%;
+    font-family: "Oswald", sans-serif;
+    font-size: 10.7vw;
+    text-shadow: 0px 0px 20px rgba(255,255,255,0.6);
+    user-select: none;
 }
