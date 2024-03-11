@@ -205,7 +205,7 @@ html, body {
     user-select: none;
 }
 .navMenuItems {
-    transform: scale(.5) rotateX(0deg);
+    transform: scale(1) rotateX(0deg);
     opacity: 0%;
     transition:  .4s ease;
     height: 100vh;
