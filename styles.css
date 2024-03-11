@@ -78,7 +78,7 @@ html, body {
     user-select: none;
     bottom: 25px;
     right: 25px;
-    background: url("Assets/circle G.png");
+    background: url("Assets/circleG.png");
     background-size: 100%;
     opacity: 100%;
 }
@@ -92,7 +92,7 @@ html, body {
     user-select: none;
     bottom: 25px;
     right: -100px;
-    background: url("Assets/circle G.png");
+    background: url("Assets/circleG.png");
     background-size: 100%;
     opacity: 0%;
 }
