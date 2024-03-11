@@ -33,7 +33,7 @@ html, body {
     border-right: 0px solid white;
 }
 .navA {
-    will-change: transform;
+    will-change: transform, position, opacity;
     user-select: none;
     z-index: 20;
     transition: .4s ease;
@@ -47,7 +47,7 @@ html, body {
     background-size: 100%;
 }
 .aAct {
-    will-change: transform;
+    will-change: transform, position, opacity, filter;
     user-select: all;
     z-index: 20;
     transition: .4s ease;
@@ -63,13 +63,13 @@ html, body {
     user-select: none;
 }
 .aAct:hover {
-    will-change: transform;
+    will-change: transform, filter;
     opacity: 100%;
     user-select: none;
     filter: drop-shadow(0px 0px 10px rgba(255, 255, 255, 0.5));
 }
 .navG {
-    will-change: transform, position, opacity;
+    will-change: transform, position;
     z-index: 20;
     transition: .4s ease;
     height: 50px;
@@ -78,12 +78,12 @@ html, body {
     user-select: none;
     bottom: 25px;
     right: 25px;
-    background: url("Assets/circleG.png");
+    background: url("Assets/CircleG.png");
     background-size: 100%;
     opacity: 100%;
 }
 .gAct {
-    will-change: transform, position, opacity;
+    will-change: transform, position;
     z-index: 20;
     transition: .4s ease;
     height: 50px;
@@ -92,7 +92,7 @@ html, body {
     user-select: none;
     bottom: 25px;
     right: -100px;
-    background: url("Assets/circleG.png");
+    background: url("Assets/CircleG.png");
     background-size: 100%;
     opacity: 0%;
 }
