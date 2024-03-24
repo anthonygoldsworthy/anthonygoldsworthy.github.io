@@ -1,47 +1,315 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Namdhinggo:wght@400;500;600;700;800&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Oswald:wght@200..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-<title>NOTES - ANTHONY GOLDSWORTHY</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Namdhinggo:wght@400;500;600;700;800&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Oswald:wght@200..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <title>anthony goldsworthy</title>
 </head>
+
 <body>
-    <div class="navA" id="navA" onclick="changeStyle()"></div>
-        <div class="navG" id="navG"></div>
-    <div id="nav" class="nav">
-        <div class="navMenuItems" id="menIt">
-            <a class="item" href="https://goldsworthy.io/about.html">ABOUT</a>
-            <a class="item" href="https://goldsworthy.io/contact.html">CONTACT</a>
-            <a class="item" href="https://goldsworthy.io/index.html">HOME</a>
+    <div class="notesTransition1" id="n1"></div>
+    <div class="notesTransition2" id="n2"></div>
+    <div class="notesTransition3" id="n2"></div>
+    <div class="notesTransition4" id="n4"></div>
+    <div class="pageTransition" id="pageTransition"></div>
+    <div class="pageTransitionIn" id="pageTransitionIn"></div>
+
+    <div class="nav" id="nav">
+        <div class="navBod">
+            <div class="backArrow" onclick="changeStyle()"></div>
+            <div class="navItems">
+                <div class="item" id="home" onclick="transHome()">
+                    HOME
+                </div>
+                <div class="item" id="about" onclick="transAbout()">
+                    ABOUT
+                </div>
+                <div class="item" id="contact" onclick="transContact()">
+                    CONTACT
+                </div>
+                <div class="item" id="notes" onclick="transNotes()">
+                    • NOTES
+                </div>
+            </div>
+            <img src="Assets/polaroid.png" class="polaroid">
         </div>
     </div>
-    <div class="pageActText" id="page" onclick="changeStyle()">NOTES ›</div>
-    <div class="mainBody" id="body">
-        <div class="bodHeader">ANTHONY GOLDSWORTHY</div>
-        <div class="bodSplash"></div>
+    <div class="bodCont">
+        <div id="bod" class="bod">
+            <div class="NavIndicator" onclick="changeStyle()"></div>
+            <div class="letterMark"></div>
+            <div class="body">
+                <div class="notesBody">
+                    <div class="notesSplash">
+                        notes
+                    </div>
+                    <div class="notesSub">
+                        <div class="notesSplashImg">
+                        </div>
+                        <div class="notesSplashImgShadow">
+                        </div>
+                    </div>
+                    <div class="notesEnter" onclick="notesOpen()">
+
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
-    <div class="bottomSpacer"></div>
+    </div>
+
+    <div class="notesPage" id="notesPage">
+        <div class="notesPageRight">
+            <div class="notesHeaderRight">
+                <div class="notesRightHeader"></div>
+            </div>
+            <div class="notesPageRightItem1">
+                <div class="notesRightItem1Contents">
+                    <div class="notesRightItem1Heading">UPCOMING ALBUMS</div><br>
+                    <img src="Assets/upcomingAlbumGrid1.png" class="upcomingAlbumGrid">
+                    <div class="notesRightItem1Body"><br>
+                        <b><i>COWBOY CARTER, </i>Beyoncé • </b><i>RENAISSANCE</i> was one of my most played albums of
+                        2023,
+                        mostly because it typically takes a year or two for an entire album to grow on me. Very rarely
+                        do I enjoy an entire album top to bottom upon the first listen. <i>Lemonade</i> was one of those
+                        rare cases, and there were a couple things that surprised me about that. Up to that point, I'd
+                        written off country music, but "Daddy Lessons" was a standout in the tracklist, and it really
+                        gave me an appreciation for well-written country, because all I'd heard for the last 6 years was
+                        "country" that just sounds like Nickelback with a southern accent. <i>COWBOY CARTER</i> so far
+                        has been solid, and I'm really excited to see where else it'll go.
+                        <br>
+                        <br>
+                        <b><i>All Born Screaming, </i>St. Vincent • </b> St. Vincent has honestly never missed, and
+                        this is shaping up to be no exception. "Broken Man" is one of my favorite tracks of the year so
+                        far, and it's only just come out. St. Vincent is particularly good having "eras" as an artist,
+                        and it's not often that you see her level of commitment. Every project is a complete departure
+                        from the last and she's almost unrecognizable between album covers. I was excited to have a
+                        darker
+                        and more agressive tone on the lead single, because it really suits how I (and presumably many
+                        others) feel about life right now. Her previous release <i>Daddy's
+                            Home </i>was a standout album, and showed an even more introspective side, and featured some
+                        of my favorite instrumtals in recent memory. Could not be more excited for this one.
+                        <br>
+                        <br>
+                        <b><i>brat, </i>Charli XCX • </b>
+                        I won't claim to be a massive Charli XCX fan; I've got a handful of songs that I enjoy, but only
+                        one album that I've really connected with. <i>Crash</i> was really fantastic pop, and I was
+                        really surprised about how much I enjoy it. <i>brat </i> is headed in a very different
+                        direction, based on "Von Dutch" but it's on trend with the Y2K aesthetic obsession. So far it
+                        really feels promising.
+                        <br>
+                        <br>
+                        <b><i>Radical Optimism, </i>Dua Lipa • </b>
+                        Let me be clear! I hate this cover and I hate the name of the album, but I thoroughly enjoy
+                        Dua's recent work, and am excited to hear what this sounds like. Houdini is underrated. She's another fantastic "eras" person and she seems to be cranking out hits, so here's hoping.
+                    </div><br>
+
+                    <div class="rightDateStamp"></i>3.23.24</div>
+                </div>
+            </div>
+            <div class="notesPageRightItem1">
+                <div class="notesRightItem1Contents">
+                    <div class="notesRightItem1Heading">HELLO</div><br>
+                    <div class="notesRightItem1Body">
+                        oh wow, my very first note. quite honestly my life is pretty boring, but i figure this will be a
+                        place to put things for when it gets interesting. like most people, i've got plenty of ideas,
+                        but i'm either too lazy or too dumb to actually complete them. i spent some time writing some
+                        video content things, and i think that'll be my next endeavor once this site gets published, but
+                        i've still got lots to write and consider. i also imagine this is a place where i can put my
+                        thoughts on new music, shows, and movies. maybe it'll just become a place to complain, who
+                        knows.
+                    </div><br>
+                    <div class="rightDateStamp"></i>3.23.24</div>
+                </div>
+            </div>
+            <div class="notesPageRightSpacer"></div>
+        </div>
+        <div class="notesPageLeft">
+            <div class="notesExit" onclick="notesOpen()">➜</div>
+            <div class="notesHeaderLeft"></div>
+            <div class="notesProfPic"></div>
+            <img src="Assets/notesNamePlate.png" class="notesNamePlate">
+            <div class="leftBodDiv"></div>
+            <div class="leftBodySectionTitle">INFO</div>
+            <div class="leftBody2">
+                <div class="leftBody2Text">this is sorta like a modern myspace page but a lot less interactive. below is
+                    some of my favorite things, and to the right is some thoughts and other things. this def feels
+                    self-absorbed but also if i die tomorrow it's a fantastic reference for funeral speech ideas. this
+                    is a static website so i literally only update it when i'm bored. the below date indicates the last
+                    time changes were made.
+                    <br>
+                    <br>
+                    <div class="leftDateStamp"><b>3.23.24</b></div>
+                </div>
+            </div>
+            <div class="leftBodySectionTitle">FAVORITE MUSIC</div>
+            <div class="leftBody1">
+                <table class="albumGrid" cellspacing="0">
+                    <tr>
+                        <td><img src="Assets/arcaArt.png" alt="" class="albumGridItem"></td>
+                        <td><img src="Assets/nfrArt.png" alt="" class="albumGridItem"></td>
+                        <td><img src="Assets/calicoArt.png" alt="" class="albumGridItem"></td>
+                    </tr>
+                    <tr>
+                        <td><img src="Assets/slingArt.png" alt="" class="albumGridItem"></td>
+                        <td><img src="Assets/homogenicArt.png" alt="" class="albumGridItem"></td>
+                        <td><img src="Assets/ethelArt.png" alt="" class="albumGridItem"></td>
+                    </tr>
+                    <tr>
+                        <td><img src="Assets/solarPowerArt.png" alt="" class="albumGridItem"></td>
+                        <td><img src="Assets/twigsArt.png" alt="" class="albumGridItem"></td>
+                        <td><img src="Assets/antiArt.png" alt="" class="albumGridItem"></td>
+                    </tr>
+                </table>
+                <div class="leftBody1Sec2">
+                    <a href="https://open.spotify.com/playlist/36Q5IBTsf4Z7FSSxjJlB2c?si=e80c61bcf8424375"
+                        class="musicButtonA">
+                        <div class="musicButton">
+                            PLAY ▶
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="leftBodySectionTitle">FAVORITE MOVIES</div>
+            <div class="leftBody3">
+                <div class="leftBody3ContentCont">
+                    <table class="movieGrid" cellspacing="0">
+                        <tr>
+                            <td><img src="Assets/moviePoster1.png" alt="" class="movieGridItem"></td>
+                            <td><img src="Assets/moviePoster2.png" alt="" class="movieGridItem"></td>
+                            <td><img src="Assets/moviePoster3.png" alt="" class="movieGridItem"></td>
+                        </tr>
+                        <tr>
+                            <td><img src="Assets/moviePoster4.png" alt="" class="movieGridItem"></td>
+                            <td><img src="Assets/moviePoster5.png" alt="" class="movieGridItem"></td>
+                            <td><img src="Assets/moviePoster6.png" alt="" class="movieGridItem"></td>
+                        </tr>
+                        <tr>
+                            <td><img src="Assets/moviePoster7.png" alt="" class="movieGridItem"></td>
+                            <td><img src="Assets/moviePoster8.png" alt="" class="movieGridItem"></td>
+                            <td><img src="Assets/moviePoster9.png" alt="" class="movieGridItem"></td>
+                        </tr>
+                    </table>
+
+                </div>
+                <div class="leftBody3Sec2">
+                    <a href="https://boxd.it/2Zmob" class="musicButtonA">
+                        <div class="musicButton">
+                            MORE ➜
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="leftBodySectionTitle">FAVORITE SHOWS</div>
+            <div class="leftBody4">
+                <div class="leftBody4ContentCont">
+                    <table class="showGrid" cellspacing="0">
+                        <tr>
+                            <td><img src="Assets/showPoster1.png" alt="" class="showGridItem"></td>
+                            <td><img src="Assets/showPoster2.png" alt="" class="showGridItem"></td>
+                            <td><img src="Assets/showPoster3.png" alt="" class="showGridItem"></td>
+                        </tr>
+                        <tr>
+                            <td><img src="Assets/showPoster4.png" alt="" class="showGridItem"></td>
+                            <td><img src="Assets/showPoster5.png" alt="" class="showGridItem"></td>
+                            <td><img src="Assets/showPoster6.png" alt="" class="showGridItem"></td>
+                        </tr>
+                        <tr>
+                            <td><img src="Assets/showPoster7.png" alt="" class="showGridItem"></td>
+                            <td><img src="Assets/showPoster8.png" alt="" class="showGridItem"></td>
+                            <td><img src="Assets/showPoster9.png" alt="" class="showGridItem"></td>
+                        </tr>
+                    </table>
+
+                </div>
+                <div class="leftBody4Sec2">
+                    <a href="https://boxd.it/2Zmob" class="musicButtonA">
+                        <div class="musicButton">
+                            MORE ➜
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <script>
         function changeStyle() {
             var nav = document.getElementById('nav');
-            var navA = document.getElementById('navA');
-            var navG = document.getElementById('navG');
-            var page = document.getElementById('page');
-            var body = document.getElementById('body');
-            var menIt = document.getElementById('menIt');
+            var bod = document.getElementById('bod');
 
-        
+
             nav.classList.toggle('navAct');
-            navA.classList.toggle('aAct');
-            navG.classList.toggle('gAct');
-            page.classList.toggle('pageAct');
-            body.classList.toggle('bodyAct');
-            menIt.classList.toggle('navMenAct');
+            bod.classList.toggle('bodAct');
         }
-      </script>
+
+        function notesOpen() {
+            var notes = document.getElementById('notesPage');
+            var n1j = document.getElementById('n1');
+            var n2j = document.getElementById('n2');
+
+
+            notes.classList.toggle('notesAct');
+            n1j.classList.toggle('notesTransition1Act');
+            n2j.classList.toggle('notesTransition2Act');
+        }
+
+        function pageTransition() {
+            var pageTransition = document.getElementById('pageTransition');
+
+            pageTransition.classList.toggle('pageTransAct');
+        }
+
+        function transHome() {
+            var pageTransition = document.getElementById('pageTransition');
+
+            pageTransition.classList.toggle('pageTransAct');
+            setTimeout(function () {
+                window.location.href = 'index.html';
+            }, 400);
+        }
+
+        function transAbout() {
+            var pageTransition = document.getElementById('pageTransition');
+
+            pageTransition.classList.toggle('pageTransAct');
+            setTimeout(function () {
+                window.location.href = 'about.html';
+            }, 400);
+        }
+
+        function transContact() {
+            var pageTransition = document.getElementById('pageTransition');
+
+            pageTransition.classList.toggle('pageTransAct');
+            setTimeout(function () {
+                window.location.href = 'contact.html';
+            }, 400);
+        }
+
+        function transNotes() {
+            var pageTransition = document.getElementById('pageTransition');
+
+            pageTransition.classList.toggle('pageTransAct');
+            setTimeout(function () {
+                window.location.href = 'notes.html';
+            }, 400);
+        }
+    </script>
 </body>
+
 </html>
