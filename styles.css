@@ -539,7 +539,11 @@ a {
     height: 100vh;
     width: 70vw;
     position: relative;
-    background: white;
+    background: cyan;
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    background-position: center;
     left: 30vw;
     top: 0px;
     overflow-y: scroll;
@@ -552,7 +556,10 @@ a {
     transform: scale(1);
     height: 100vh;
     width: 30vw;
-    background: #e6e6e6;
+    background-image: url("Assets/gradientBG.gif");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     position: absolute;
     left: 0vw;
     top: 0px;
@@ -564,9 +571,10 @@ a {
 .notesHeaderRight {
     width: 70vw;
     height: 40vh;
-    background-image: url("Assets/gradientBG.gif");
-    background-size: cover;
+    background-image: url("Assets/GIF7.gif");
+    background-size: 105%;
     background-repeat: no-repeat;
+    overflow: hidden;
     background-position: center;
     font-family: "Montserrat", sans-serif;
     font-weight: 900;
@@ -749,9 +757,11 @@ a {
     width: 70vw;
     position: absolute;
     background-image: url("Assets/notesRightHeader.png");
+    filter: drop-shadow(0px 0px 40px white);
     background-size: 100%;
     background-position: center;
     transform: scale(.7);
+    mix-blend-mode:exclusion;
     background-repeat: no-repeat;
     right: 0px;
     top: 0px;
@@ -776,7 +786,7 @@ a {
     text-align: center;
     font-weight: 500;
     font-family: "Montserrat", sans-serif;
-    color: black;
+    color: rgba(0,0,0,0.7);
 }
 
 .leftBodDiv2 {
@@ -924,7 +934,7 @@ a {
     width: 68vw;
     border: 2px solid black;
     position: relative;
-    background: #e6e6e6;
+    background: white;
     font-family: "Montserrat", sans-serif;
     font-weight: 600;
     left: calc(1vw - 4px);
@@ -954,13 +964,15 @@ a {
 
 .notesRightItem1Body {
     font-size: 1.2vw;
+    text-indent: 20px;
     font-weight: 600;
 }
 
-.upcomingAlbumGrid {
+.fullImageRight {
     width: 100%;
-    border-radius: 20px;
+    border-radius: 10px;
     margin-left: -2px;
+    margin-top: -10px;
     border: 2px solid black;
 }
 
@@ -1014,4 +1026,15 @@ a {
     width: 100vw;
     z-index: 200;
     background: #e6e6e6;
+}
+.explainer {
+    opacity: .7;
+}
+.AppleMusic {
+    border-radius: 10px;
+    border: 2px solid black;
+    margin-left: -2px;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
 }
